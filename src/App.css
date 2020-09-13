@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+html body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+		"Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+		"Helvetica Neue", sans-serif;
+	background-color: #fbebed;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+	margin: 80px auto 32px auto;
+	max-width: 1200px;
+	border: thick peru;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-container {
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: #767c77;
+	color: #eee;
+}
+/* 
+.title {
+	align-self: flex-start;
+	border: thick crimson 10px;
+} */
+
+.nav-button {
+	align-self: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.loginmodal {
+	margin: 80px auto 0px auto;
+	padding: 16px;
+	align-self: center;
 }
 
-.App-link {
-  color: #61dafb;
+.loggin {
+	font-size: small;
+	color: #767c77;
+	align-self: center;
+	max-width: max-content;
+	margin: auto auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.error {
+	font-size: small;
+	color: red;
+	align-self: center;
+	max-width: max-content;
+	margin: auto auto;
+}
+
+.gridContainer {
+	text-align: center;
+	align-items: center;
+}
+
+.taskRoot {
+	text-align: center;
+	align-items: center;
+}
+
+#taskaddbut {
+	margin: 16px auto 16px auto;
+}
+
+.slides-iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.slide-container {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	padding-top: 56.25%;
 }
